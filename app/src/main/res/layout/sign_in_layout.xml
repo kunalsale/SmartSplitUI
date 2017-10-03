@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/money_icon"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/sign_in_drawable"
+            android:hint="@string/enter_user_name"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textColorHint="#70000000"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="16dp"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/sign_in_drawable"
+            android:textSize="16sp"
+            android:hint="@string/enter_password"
+            android:padding="8dp"
+            android:textColorHint="#70000000"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawablePadding="16dp"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4DB6AC"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:text="@string/signin" />
+
+    </LinearLayout>
+
+</LinearLayout>
